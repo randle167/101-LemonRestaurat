@@ -9,7 +9,23 @@ import SwiftUI
 
 struct AboutView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("About Little lemon")
+            .font(.largeTitle)
+            .foregroundColor(.green)
+            .bold()
+        
+        Text("Little lemon is a cozy Mediterranean-inspired restaurant in the heart of downtown Toronto. ")
+            .multilineTextAlignment(.center)
+            .font(.body)
+            .padding()
+        
+        HStack(spacing: 30){
+            Image(systemName: "fork.knife")
+            Image(systemName: "leaf")
+            Image(systemName: "map")
+        }
+        .font(.system(size: 40))
+        .foregroundColor(.yellow)
     }
 }
 
